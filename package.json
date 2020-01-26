@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest romanizer.test.js",
-    "watch": "nodemon -q -x 'npm test'",
+    "test": "jest --verbose romanizer.test.js --coverage",
+    "update": "nodemon -q -x 'npm test'",
     "start": "browser-sync start --no-notify -sf 'index.html, style.css, app.js'"
   },
   "keywords": [],
