@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tape *.test.js | tap-spec",
-    "test:watch": "nodemon -q -x 'npm test'",
+    "test": "jest romanizer.test.js",
+    "watch": "nodemon -q -x 'npm test'",
     "start": "browser-sync start --no-notify -sf 'index.html, style.css, app.js'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tap-spec": "^4.1.1",
-    "tape": "^4.6.3"
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "@types/jest": "^24.9.1"
   }
 }
